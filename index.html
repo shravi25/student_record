@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student record amnagement</title>
+        <style>
+            body{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin: 20px;
+                background-color: rgb(169, 222, 247)
+            }
+            h1{
+                text-align: center;
+            }
+            #studentform{
+                margin: auto;
+                width: 500px;
+                height: auto;
+                text-align: center;
+                
+            }
+            .error{
+                color: red;
+            }
+            .display{
+                width: 500px;
+                margin: auto;
+                border: 1px solid black;
+                align-items: center;
+                text-align: center;
+                padding: 20px;
+                border-radius: 20px;
+                background-color: rgb(217, 225, 232);
+            }
+            .base{
+              border-radius: 5px;  
+              padding: 5px;
+            }
+            button{
+               background-color: rgb(84, 168, 210);
+               border-radius: 5px; 
+               padding: 5px;
+            }
+            ul{
+                text-align: center;
+                border: 1px solid black;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>Student Records Management</h1>
+        <div class="display">
+            <form id="studentform">
+            <label for="studentid">Student Id</label><br>
+            <input type="text" class="base" id="studentid" placeholder="Enter Student Id">
+            <br><br>
+            <label for="studentname">Student name</label><br>
+            <input type="text" class="base" id="studentname"placeholder="Enter Student Name" >
+            <br><br>
+            <label for="studentage">Student age</label><br>
+            <input type="text" class="base" id="studentage" placeholder="Enter Student Age" >
+            <br><br>
+            <button  type="submit">Add Student</button>
+        </form><br><br>
+        
+             <h2 style="text-align: center;">Student Records</h2>
+            <div id="error" class="error"></div>
+            <ul style="text-align: start; border: 1px solid black;" id="studentlist"></ul>
+        </div>
+        
+        
+       
+        <script src="login.js"></script>
+    </body>
+</html>
+
+
